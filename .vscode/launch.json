@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UdemyprojApplication<udemyproj>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.main.udemyproj.UdemyprojApplication",
+            "projectName": "udemyproj",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
