@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Scramble</title>
+</head>
+<body>
+    <h1>ScrambleGame!</h1>
+    <p>Random word: <span th:text="${randomWord}"></span></p>
+    <p>Mixed word: <span th:text="${mixedWord}"></span></p>
+
+
+    <form th:action="@{/game}"  method="post">
+        <label for="inputString">Input String:</label>
+        <input type="text" id="inputString" name="inputString" placeholder="Enter your guess"/>
+        <button type="submit">Submit your guess</button>
+
+        <p th:if="${message}" th:text="${message}"></p>
+    </form>
+</body>
+</html>
